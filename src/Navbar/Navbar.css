@@ -1,0 +1,38 @@
+/* src/Navbar.css */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fa7e1e;
+  padding: 1rem;
+}
+
+.navbar-logo {
+  color: #fff;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.amily {
+  margin-left: -5px;
+}
+.navbar-links {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+.navbar-links li {
+  margin: 0;
+}
+
+.navbar-links a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.navbar-links a:hover {
+  text-decoration: underline;
+  text-decoration: none;
+}

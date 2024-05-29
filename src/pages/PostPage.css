@@ -1,0 +1,93 @@
+/* PostPage.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(251, 251, 251);
+}
+
+.post-container {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.post-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.post-container input[type="text"],
+.post-container textarea,
+.post-container input[type="file"] {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.post-container input[type="text"]:focus,
+.post-container textarea:focus {
+  border-color: #777;
+}
+
+.post-container textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+.post-container input[type="file"] {
+  padding: 5px;
+}
+
+.post-container button {
+  display: block;
+  width: 100%;
+  background-color: #fd7e14; /* Bright orange */
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  padding: 10px;
+  transition: background 0.3s;
+}
+
+.post-container button:hover {
+  background-color: #e06612; /* Darker orange */
+}
+
+.post img,
+.post video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+}
+
+/* Ensure the image is smaller and responsive */
+.post img {
+  max-width: 600px; /* Limit maximum width */
+  width: 100%; /* Ensure responsiveness */
+  display: block;
+  margin: 0 auto;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .post img {
+    max-width: 100%;
+  }
+}

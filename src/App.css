@@ -1,38 +1,193 @@
-.App {
+/* General App.css */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+.app {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+nav {
+  background-color: #333;
+  padding: 10px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav a:hover {
+  color: #4caf50;
+}
+
+.create-post,
+.home {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.create-post h2,
+.home h2 {
   text-align: center;
+  color: #333;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.create-post input,
+.create-post textarea {
+  width: 100%;
+  margin: 15px 0;
+  padding: 20px;
+  font-size: 1rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.create-post button,
+.home .post button {
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.create-post button {
+  background-color: #774caf;
+  color: #fff;
+}
+
+.create-post button:hover {
+  background-color: #45a049;
+}
+
+.home .post {
+  background: #ffffff;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.home .post h3 {
+  margin-top: 0;
+  color: #007bff;
+  margin-bottom: 10px; /* Added margin */
+}
+
+.home .post p {
+  color: #555;
+  margin-bottom: 10px; /* Added margin */
+}
+
+.home .post .media-container {
+  margin: 10px 0;
+}
+
+.home .post img,
+.home .post video {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.home .post img {
+  max-width: 600px; /* Limit maximum width */
+  width: 100%; /* Ensure responsiveness */
+  display: block;
+  margin: 0 auto;
+}
+
+.home .like-comment-container {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  margin-top: 20px; /* Added margin */
+}
+
+.home .likes {
+  font-weight: bold;
+  color: #fd7e14; /* Bright orange */
+}
+
+.home .like-button {
+  background: #fd7e14; /* Bright orange */
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.home .like-button:hover {
+  background: #e06612; /* Darker orange */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.home .comments-container {
+  margin-top: 20px;
+}
+
+.home .comments-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.home .comments-container li {
+  background: #f0f2f5;
+  padding: 10px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.home .comment-input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+.home .comment-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.home .comment-button {
+  background: #6f42c1; /* Vibrant purple */
+  color: white;
+}
+
+.home .comment-button:hover {
+  background: #5a3798; /* Darker purple */
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .home .post img {
+    max-width: 100%;
   }
 }
